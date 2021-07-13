@@ -1,4 +1,4 @@
-local hyper = {"ctrl", "alt"}
+local hyper = {"ctrl", "shift"}
 
 hs.window.animationDuration = 0.1
 
@@ -28,3 +28,10 @@ hs.hotkey.bind(hyper, "W", open("企业微信"))
 hs.hotkey.bind(hyper, "C", open("Google Chrome"))
 hs.hotkey.bind(hyper, "Return", open("iTerm"))
 hs.hotkey.bind(hyper, "V", open("Visual Studio Code"))
+hs.hotkey.bind(hyper, "K", open("KeepassXC"))
+
+
+require('clipboard')
+--- require('apps')
+
+
