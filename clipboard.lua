@@ -8,15 +8,15 @@ end)
 local history = {}
 
 function addHistoryFromPasteboard(text)
-  if string.find(text, "^%s*$") then return end
+  if not string or string.find(text, "^%s*$") then return end
   local item = {}
   item.text = string.gsub(text, "[\r\n]+", " ")
   item.content = text;
 
   table.insert(history, 1, item)
   history = uniq(history)
-  table.remove(history, 50)
-  --- history = table.slice(history, 1, 50)
+  -- table.remove(history, 50)
+  history = table.slice(history, 1, 50)
 end
 
 

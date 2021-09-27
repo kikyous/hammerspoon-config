@@ -29,9 +29,11 @@ hs.hotkey.bind(hyper, "C", open("Google Chrome"))
 hs.hotkey.bind(hyper, "Return", open("iTerm"))
 hs.hotkey.bind(hyper, "V", open("Visual Studio Code"))
 hs.hotkey.bind(hyper, "K", open("KeepassXC"))
+hs.hotkey.bind(hyper, "T", open("TablePlus"))
 
 
 require('clipboard')
+require('bluetooth_sleep')
 --- require('apps')
 
 
